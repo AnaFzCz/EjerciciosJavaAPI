@@ -13,7 +13,7 @@ public class BuscaLibros {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa el nombre del libro que deseas: ");
         var buscaLibro = scanner.nextLine();
-        var llave = "AIzaSyCpQvs6hoW6_SlyUJZQ7shGJVkGKu1c2Ak";
+        var llave = "la LLAVE";
          String direccion = "https://www.googleapis.com/books/v1/volumes?q=" + buscaLibro + "+intitle:keyes&key=" + llave;
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(direccion)).build();
